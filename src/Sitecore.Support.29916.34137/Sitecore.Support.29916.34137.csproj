@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
     <LangVersion>6</LangVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\..\lib\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\lib\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\lib\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Configuration.Extensions">
+      <HintPath>..\..\lib\Sitecore.Framework.Configuration.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing.Abstractions">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing.Common">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Publishing.Service.Abstractions">
+      <HintPath>..\..\lib\Sitecore.Framework.Publishing.Service.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.2.5\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
