@@ -251,7 +251,7 @@ namespace Sitecore.Support.Framework.Publishing.DataPromotion
             .Concat(
                 // only use the fields from source if they don't exist in the clone
                 sourceVariant.Fields
-                    .Where(x => cloneVariant.Fields.All(c => c.FieldId != x.FieldId))
+                    .Where(x => fields.All(c => c.FieldId != x.FieldId))
                     .Select(x => new FieldData(
                         x.FieldId,
                         cloneVariant.Id,
